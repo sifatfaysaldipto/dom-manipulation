@@ -7,12 +7,35 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Dom Manipulation</title>
+		<link
+			rel="stylesheet"
+			href="./app/styles/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
 	</head>
-	<body>
-		<header><nav>Home</nav></header>
-		<main>
+	<body class="container">
+		<header>
+			<nav class="navigation_bar">
+				<p class="header_logo">
+					<span class="material-symbols-outlined"> home </span>
+					JavaScript Dom
+				</p>
+				<ul class="navigation_menu">
+					<li>Home</li>
+					<li>About</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main_section">
 			<section>Main</section>
 		</main>
-		<footer>Footer</footer>
+		<footer class="footer_bar">&copy; Sifat Faysal Dipto | JS DOM</footer>
+		<script src="./app/src/app.js"></script>
+		<script>
+			console.log('adding javascript inside the html');
+		</script>
 	</body>
 </html>
