@@ -30,12 +30,46 @@
 			</nav>
 		</header>
 		<main class="main_section">
-			<section>Main</section>
+			<section>
+				<p>Menu List</p>
+				<div class="menu_list">
+					<div class="fruits_section">
+						<p class="icon_title">
+							<span class="material-symbols-outlined"> nutrition </span>Fruit List
+						</p>
+						<ul class="fruits_list">
+							<li>Mango</li>
+							<li>Banana</li>
+							<li>Carrot</li>
+							<li>Papaya</li>
+						</ul>
+					</div>
+					<div id="fish_section">
+						<p class="icon_title">
+							<span class="material-symbols-outlined"> phishing </span>Fish List
+						</p>
+						<ul id="fish_list">
+							<li>Rohu Fish</li>
+							<li>Catla Fish</li>
+							<li>Boal Fish</li>
+							<li>Pabda Fish</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="content_section">
+				<p>Lorem Ipsum</p>
+			</section>
 		</main>
 		<footer class="footer_bar">&copy; Sifat Faysal Dipto | JS DOM</footer>
 		<script src="./app/src/app.js"></script>
 		<script>
 			console.log('adding javascript inside the html');
+
+			const liCollection = document.getElementsByTagName('li');
+			for (const li of liCollection) {
+				console.log(li.innerText);
+			}
 		</script>
 	</body>
 </html>

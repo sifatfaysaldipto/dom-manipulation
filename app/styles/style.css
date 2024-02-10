@@ -65,6 +65,63 @@ body {
 	border-radius: 10px;
 }
 
+/* menu list styles */
+.menu_list {
+	display: flex;
+	gap: 10px;
+}
+
+.icon_title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 0 10px 0;
+}
+
+/* fruits list styles */
+.fruits_section {
+	width: 50%;
+	padding: 20px;
+	background-color: #ea6c46;
+	color: white;
+	border-radius: 10px;
+}
+.fruits_list {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.fruits_list ul,
+.fruits_list li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* fish section list */
+#fish_section {
+	width: 50%;
+	padding: 20px;
+	background-color: #ea6c46;
+	color: white;
+	border-radius: 10px;
+}
+#fish_list {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+#fish_list ul,
+#fish_list li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
 /* footer styles */
 .footer_bar {
 	background-color: #f0db4f;
