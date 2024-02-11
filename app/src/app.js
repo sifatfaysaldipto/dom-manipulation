@@ -62,3 +62,26 @@ function clickPurpleButton() {
 document.getElementById('body_pink').addEventListener('click', function () {
 	document.body.style.backgroundColor = 'pink';
 });
+
+// Define a function to handle button clicks
+function handleOnClick() {
+	console.log('button clicked!'); // Log a message to the console
+	const handlerStatus = document.getElementById('handler-status');
+	handlerStatus.innerHTML = 'Clicked'; // Update the content of an element with ID 'handler-status'
+}
+
+// Add an event listener to an element with ID 'event-listener'
+document.getElementById('event-listener').addEventListener('click', function () {
+	const handlerStatus = document.getElementById('title-status');
+	handlerStatus.innerHTML = 'text updated by listener button!'; // Update the content of an element with ID 'title-status'
+});
+
+// Add an event listener to an element with ID 'name-submit-btn'
+document.getElementById('name-submit-btn').addEventListener('click', function () {
+	const nameField = document.getElementById('name-field');
+	const inputText = nameField.value;
+	const p = document.getElementById('display-name');
+	p.innerHTML = inputText; // Update the content of an element with ID 'display-name' to the value of the input field
+	nameField.value = ''; // Clear the input field after submission
+});
+

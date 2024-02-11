@@ -124,7 +124,15 @@ body {
 
 /* button styles */
 .generic_button {
-	background-color: #ea6c46;
+	background-color: #383732;
+	color: aliceblue;
+	padding: 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+.generic_button:hover{
+	background-color: #1e1e1d;
 }
 
 /* footer styles */

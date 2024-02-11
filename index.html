@@ -62,6 +62,7 @@
 			</section>
 			<section>
 				<button
+					class="generic_button"
 					title="one click button"
 					onclick="console.log('i am clicked')"
 					type="button"
@@ -69,25 +70,68 @@
 					Click Me
 				</button>
 				<button
+					class="generic_button"
 					type="button"
 					onclick="document.body.style.backgroundColor ='orange'"
 				>
 					Make Body Orange
 				</button>
 				<button
+					class="generic_button"
 					type="button"
 					onclick="resetColor()"
 				>
 					Reset Background Color
 				</button>
 				<button
+					class="generic_button"
 					onclick="clickPurpleButton"
 					type="button"
 					id="body_purple"
 				>
 					Make Bg Purple
 				</button>
-				<button type="button" id="body_pink" >Make bg ping</button>
+				<button
+					class="generic_button"
+					type="button"
+					id="body_pink"
+				>
+					Make bg ping
+				</button>
+				<button
+					class="generic_button"
+					type="button"
+					id="handler-status"
+					onclick="handleOnClick()"
+				>
+					Click Me
+				</button>
+				<div>
+					<p id="title-status">Lorem Ipsum</p>
+					<button
+						class="generic_button"
+						type="button"
+						id="event-listener"
+					>
+						Event Listener
+					</button>
+				</div>
+				<div>
+					<p>First Name <span id="display-title"></span></p>
+					<input
+						placeholder="Name xxx xxx"
+						type="text"
+						name="Name"
+						id="name-field"
+					/>
+					<button
+						type="button"
+						id="name-submit-btn"
+					>
+						Submit
+					</button>
+				</div>
+				<p id="display-name"></p>
 			</section>
 		</main>
 		<footer class="footer_bar">&copy; Sifat Faysal Dipto | JS DOM</footer>
