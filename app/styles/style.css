@@ -122,6 +122,11 @@ body {
 	cursor: pointer;
 }
 
+/* button styles */
+.generic_button {
+	background-color: #ea6c46;
+}
+
 /* footer styles */
 .footer_bar {
 	background-color: #f0db4f;

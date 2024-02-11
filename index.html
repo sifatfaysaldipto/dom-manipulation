@@ -60,16 +60,40 @@
 			<section id="content_section">
 				<p>Lorem Ipsum</p>
 			</section>
+			<section>
+				<button
+					title="one click button"
+					onclick="console.log('i am clicked')"
+					type="button"
+				>
+					Click Me
+				</button>
+				<button
+					type="button"
+					onclick="document.body.style.backgroundColor ='orange'"
+				>
+					Make Body Orange
+				</button>
+				<button
+					type="button"
+					onclick="resetColor()"
+				>
+					Reset Background Color
+				</button>
+				<button
+					onclick="clickPurpleButton"
+					type="button"
+					id="body_purple"
+				>
+					Make Bg Purple
+				</button>
+				<button type="button" id="body_pink" >Make bg ping</button>
+			</section>
 		</main>
 		<footer class="footer_bar">&copy; Sifat Faysal Dipto | JS DOM</footer>
 		<script src="./app/src/app.js"></script>
 		<script>
 			console.log('adding javascript inside the html');
-
-			const liCollection = document.getElementsByTagName('li');
-			for (const li of liCollection) {
-				console.log(li.innerText);
-			}
 		</script>
 	</body>
 </html>
