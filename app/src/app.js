@@ -85,3 +85,21 @@ document.getElementById('name-submit-btn').addEventListener('click', function ()
 	nameField.value = ''; // Clear the input field after submission
 });
 
+// Add event listener to the button with ID 'post-btn'
+document.getElementById('post-btn').addEventListener('click', function (event) {
+	event.preventDefault(); // Prevent default form submission behavior
+	// Get the comment box element
+	const commentBox = document.getElementById('comment-box');
+	// Get the value of the comment from the comment box
+	const newComment = commentBox.value;
+	// Get the comment container element
+	const commentContainer = document.getElementById('comment-container');
+	// Create a new paragraph element
+	const p = document.createElement('p');
+	// Set the text of the paragraph to the new comment
+	p.innerText = newComment;
+	// Append the paragraph element to the comment container
+	commentContainer.appendChild(p);
+	// Clear the comment box after adding the comment
+	commentBox.value = '';
+});
